@@ -1,0 +1,14 @@
+extends base
+
+block content
+    .top
+        h1 Log into your Account:
+        form.login
+            .form_login
+                label(for='email') Email:
+                input#email.form-input(type='email' , placeholder='name@email.com' name='email' required)
+            .form_login
+                label(for='pw') Password:
+                input#pw.form-input(type='password' , placeholder='********' name='password' required)
+            .input_button
+                button.btn.submit_button Log in

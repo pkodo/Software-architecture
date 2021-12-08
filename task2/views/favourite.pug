@@ -1,0 +1,19 @@
+extends base
+
+block content
+    .top
+        h1 Add a favourite search to your list
+        .form_favourite 
+          .input_container
+            label(for='poi') Point of Interest: 
+            input#poi.form__input(type='text', placeholder='Enter Poi here..' name='poi')
+            label(for='name') Name: 
+            input#name.form__input(type='text', placeholder='Enter name here..' name='name')
+            label(for='shop') Category: 
+            input#shop.form__input(type='text' , placeholder='Enter shop here..' name='shop')
+            label(for='width') Width of marked Area: 
+            input#width.form__input(type='number' min=0 name='width')
+            label(for='height') Height of marked Area: 
+            input#height.form__input(type='number' min=0 name='height')
+          .input_button
+            button.btn.submit_button Add favourite to list

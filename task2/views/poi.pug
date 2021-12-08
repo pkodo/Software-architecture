@@ -1,0 +1,15 @@
+extends base
+
+block content
+    .top
+        h1 Add a poi to your list
+        .form_poi 
+          .input_container
+            label(for='poi') Point of Interest: 
+            input#poi.form__input(type='text', placeholder='Enter Poi here..' name='poi' required)
+            label(for='lon') Longitude: 
+            input#lon.form__input(type='number' min=0 step="0.0000001", placeholder='Enter lon here..' name='lon' required)
+            label(for='lat') Latitude: 
+            input#lat.form__input(type='number' min=0 step="0.0000001" , placeholder='Enter lat here..' name='lat' required)
+          .input_button
+            button.btn.submit_button Add poi to list

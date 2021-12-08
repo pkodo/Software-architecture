@@ -1,0 +1,17 @@
+extends base
+
+block content
+    .top
+        h1 Add an individual shop to your list
+        .form_shop
+          .input_container
+            label(for='name') Name: 
+            input#name.form__input(type='text', placeholder='Enter name here..' name='name' required)
+            label(for='lon') Longitude: 
+            input#lon.form__input(type='number' min=0 step="0.0000001", placeholder='Enter lon here..' name='lon' required)
+            label(for='lat') Latitude: 
+            input#lat.form__input(type='number' min=0 step="0.0000001" , placeholder='Enter lat here..' name='lat' required)
+            label(for='shop') Category: 
+            input#shop.form__input(type='text' , placeholder='Enter shop here..' name='shop' required)
+          .input_button
+            button.btn.submit_button Add shop to list

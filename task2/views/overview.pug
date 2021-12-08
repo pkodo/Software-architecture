@@ -1,0 +1,23 @@
+extends base
+
+block content
+    .top
+        h1 Find Shops in Graz
+          form.form_overview
+            .input_container
+              label(for='poi') Point of Interest: 
+              input#poi.form__input(type='text', placeholder='Enter Poi here..' name='poi')
+              label(for='lon') Longitude: 
+              input#lon.form__input(type='number' min=0 step="0.0000001", placeholder='Enter lon here..' name='lon')
+              label(for='lat') Latitude: 
+              input#lat.form__input(type='number' min=0 step="0.0000001" , placeholder='Enter lat here..' name='lat')
+            .input_container
+              label(for='shop') Shop category: 
+              input#shop.form__input(type='text', placeholder='e.g. bakery' name='shop')
+              label(for='width') Width of marked Area: 
+              input#width.form__input(type='number' placeholder='Enter width here..' min=0 name='width' )
+              label(for='height') Height of marked Area: 
+              input#height.form__input(type='number' placeholder='Enter height here..' min=0 name='height')
+            .input_button
+              button.btn.submit_button Start search
+

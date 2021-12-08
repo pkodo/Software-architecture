@@ -1,0 +1,14 @@
+header.header
+	nav.nav.nav--shop
+		a.nav__el(href='/') Guide to Graz
+		if user
+			a.nav__el(href='/favourite') My Favourites
+			a.nav__el(href='/poi') Point of Interests
+			a.nav__el(href='/shop') Individual Shops
+	.header__logo
+		img(src='img/logo.png' alt='guide_to_graz logo')
+	if user
+		a.nav__el(href='#') LogOut
+	else
+		a.nav__el(href='/login') LogIn
+		a.nav__el.nav__el--cta(href='/signup') SignUp

@@ -1,0 +1,16 @@
+extends base
+
+block content
+    .top
+       h1 Create a new Account:
+        .signup
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email' required)
+            .form_signup
+            label(for='name') Username:
+            input#name.form-control(type='text', placeholder='First and last name' name='name' required)
+            .form_signup
+            label(for='pw') Password:
+            input#pw.form-control(type='password' placeholder='********' name='password' required)
+            .input_button
+            button.btn.submit_button Register now
