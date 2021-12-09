@@ -58,3 +58,5 @@ app.use("/register", register);
 app.use("/login", login);
 app.use("/verify", verify);
 app.use("/reset-password", resetPassword);
+
+console.log("Test");
